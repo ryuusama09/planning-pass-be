@@ -214,7 +214,9 @@ app.post('/api/generate-report', async (req, res) => {
     res.status(500).json({ error: 'Failed to generate report' });
   }
 });
-
+app.get("/",(req,res)=>{
+  res.send("Hello World , server functioning !")
+})
 // Endpoint to save form submissions
 app.post('/api/submit-form', async (req, res) => {
   try {
